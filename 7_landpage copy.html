@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ini adalah internal css */
+
+        header {
+            background-color: rgb(180, 0, 99);
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+        }
+
+        nav {
+            background-color: rgb(218, 0, 138);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: whitesmoke;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: rgba(255, 166, 0, 0.47);
+            font-weight: bolder;
+        }
+
+        .hero  {
+            text-align: center;
+            padding: 50px 0;
+            height: 400px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            /* background-color: rgb(193, 0, 170); */
+            background: url(https://images.squarespace-cdn.com/content/v1/608039ab6a2cc34fdbbd405e/1619019659999-S1Z6EXD6VQ48BAJ6XDBT/image-asset.png) no-repeat center center/cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            flex: 1;
+            min-width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+        }
+
+        .tentang {
+            background: #f510a5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            min-width: 250px;
+            flex: 1;
+        }
+
+        .service h3 {
+            color: #f510a5;
+        }
+
+        form {
+            background: #f510a5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input,textarea {
+            width: 98%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #ffda38bd;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #fde165a0;
+        }
+
+        footer {
+            text-align: center;
+            background: #e7028bcf;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header id="kembali">
+        <h1>Selamat Datang Di Salon Kecantikan Depi</h1>
+        <p>Tampil Cantik dan Menawan</p>
+    </header>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang Di Website Salon Kecantikan Kami</h1>
+    </section>
+
+    <section class="container" id="tentang">
+        <h2 style="text-align: center">Tentang Kami</h2>
+        <div class="services">
+            <div class="tentang">
+                <h3>Visi & Misi</h3>
+                <p>Kami bertujuan menjadi pilihan utama pelangggan dengan menyediakan layanan berkualitas tinggi dan penglaman yang tak terlupakan, selalu mengutamakan kepuasan pelanggan melalui profesionalisme dan perhatian terhadap detail. </p>
+            </div>
+             <div class="tentang">
+                <h3>Spesialisasi</h3>
+                <p>Salon Kami adalah pusat kecantikan terpadu (one-stop beauty center) yang menyediakan layanan lengkap, meliputi perawatan rambut profesional, manikur / pedikur, facial kulit wajah, dan layanan spa tubuh yang merelaksasi dalam satu lokasi. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="layanan">
+        <h2 style="text-align: center">Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Perawatan Rambut</h3>
+                <p>Potong dan Styling, Hair Coloring, Hair Smoothing, Keratin  </p>
+            </div>
+            <div class="service">
+                <h3>Perawatan Kuku</h3>
+                <p>Manikur, Pedikur, Pewarnaan dan Desain Kuku</p>
+            </div>
+            <div class="service">
+                <h3>Perawatan Wajah dan Tubuh</h3>
+                <p>Facial, Masker, Chemical Peeling, Body Massage, Waxing, Makeup dan Makeover</p>
+            </div>
+        </div class="services">
+    </section>
+
+    <section class="container" id="kontak">
+        <h2 style="text-align: center;">Hubungi kami</h2>
+        <form action="">
+            <label>Nama</label>
+            <input type="text" placeholder="Masukkan nama Anda" />
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan email Anda" />
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Tulis pesan Anda di sini"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Copyright © 2025 Salon Kecantikan Depi</p>
+        <nav>
+            <a href="#kembali">Kembali</a>
+        </nav>
+    </footer>
+</body>
+</html>
